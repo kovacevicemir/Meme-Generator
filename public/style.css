@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', cursive;
+}
+
+header{
+    display: flex;
+    background-color: #ccc;
+    color:#ccc;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 3px black;
+}
+
+header img{
+    width:120px;
+    margin:10px;
+}
+
+header h1{
+    font-weight: 250;
+    font-size: 50px;
+    color:black;
+    margin:10px;
+}
+
+.meme-container{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.meme-image img{
+    width:100%;
+    height:100%;
+}
+
+form{
+    box-shadow: 0 3px 3px #ccc;
+    padding:7px;
+    font-size: 18px;
+}
+
+form input{
+    margin: 0 20px;
+    padding:5px;
+}
+
+form button{
+    font-size: 20px;
+    padding:5px;
+    margin-right: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: purple;
+    color:#fff;
+    border:none;
+    transition: all 0.2s ease-in;
+}
+
+form button:hover{
+    opacity: 0.7;
+    transform: scale(0.99);
+}
+
+.meme-image{
+    border:1px solid #ccc;
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+    width: 700px;
+    padding:5px;
+}
+
+.top-text{
+    position: absolute;
+    top:2%;
+    display: block;
+    width: 100%;
+}
+
+.bottom-text{
+    position: absolute;
+    bottom:6%;
+    display: block;
+    width: 100%;
+}
+
+h2{
+    color:#fff;
+    text-shadow: 1px 1px 10px black;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 40px;
+}
+
+@media(max-width:768px){
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    form input{
+        width: 90%;
+        margin-bottom: 6px;
+    }
+
+    button{
+        padding:5px;
+        font-size: 18px;
+        min-width: 75%;
+        margin:10px;
+    }
+
+    .meme-image{
+        max-width: 400px;
+    }
+
+    
+
+}
